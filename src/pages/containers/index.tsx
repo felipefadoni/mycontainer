@@ -2,6 +2,7 @@
 import axios from "axios";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import PageTitle from "src/components/PageTitle";
 import { LoadingModal } from "src/styles/app";
 import { Table } from "./components";
 import { RowsProps } from "./components/Table";
@@ -64,6 +65,8 @@ export default function Containers() {
 
   return (
     <div>
+      <PageTitle>Containers</PageTitle>
+
       <Table
         headers={["Name", "State", "Network", "Actions"]}
         rows={list}

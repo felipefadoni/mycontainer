@@ -30,7 +30,7 @@ export const TableNetworks = styled("table", {
   },
 
   "tbody tr:hover": {
-    background: "$poolBlue",
+    background: "$poolBlueLight",
   },
 
   "tbody tr td": {

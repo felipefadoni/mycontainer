@@ -2,13 +2,13 @@ import { styled } from ".";
 
 export const RootApp = styled("main", {
   display: "flex",
-  width: "100vw",
+  width: "100%",
   minHeight: "100vh",
 });
 
 export const Main = styled("main", {
-  width: "85vw",
-  padding: "1rem 0 0 1rem",
+  width: "100%",
+  padding: "16px",
 });
 
 export const LoadingModal = styled("div", {

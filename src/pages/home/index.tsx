@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import PageTitle from "src/components/PageTitle";
 import { LoadingModal } from "src/styles/app";
 import { Table } from "./components";
 import { RowsProps } from "./components/Table";
@@ -27,6 +28,8 @@ export default function Home() {
 
   return (
     <div>
+      <PageTitle>Networks</PageTitle>
+
       <Table headers={["ID", "Name", "Created"]} rows={list} />
 
       {isRefreshing && <LoadingModal>Aguarde...</LoadingModal>}

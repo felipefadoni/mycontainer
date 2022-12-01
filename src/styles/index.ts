@@ -17,6 +17,7 @@ export const {
       pink: "#b030b0",
       blueLight: "#6c91bf",
       poolBlue: "#5bc8af",
+      poolBlueLight: "#b7e1d7",
       white: "#fff",
       greyLight: "#E8E8E8",
       halfTransparentWhite: "rgba(255,255,255,0.4)",

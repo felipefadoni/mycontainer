@@ -20,7 +20,11 @@ export default async function listAllService({
     network: container.HostConfig.NetworkMode,
   }));
 
-  const orderContainer = orderBy(containersMap, ["network"], "asc");
+  const orderContainer = orderBy(
+    containersMap,
+    ["network", "state", "name"],
+    ["asc", "desc", "asc"]
+  );
 
   return orderContainer;
 }
