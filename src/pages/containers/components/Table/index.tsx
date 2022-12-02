@@ -39,12 +39,20 @@ export default function Table({
               <p>{row.network}</p>
             </td>
             <td>
-              {row.state === "running" && (
+              {["restarting", "running"].includes(row.state) && (
                 <button
                   onClick={() => stopContainer(row.name)}
                   className="btn-stop"
                 >
                   Stop
+                </button>
+              )}
+              {["created"].includes(row.state) && (
+                <button
+                  onClick={() => stopContainer(row.name)}
+                  className="btn-stop"
+                >
+                  Delete
                 </button>
               )}
               {row.state === "exited" && (

@@ -15,13 +15,13 @@ export default function Menu() {
         </div>
         <NavContainer>
           <ul>
-            <li className={router.pathname === "/home" ? "active" : ""}>
-              <Link href="/" passHref legacyBehavior>
-                Networks
-              </Link>
-            </li>
             <li className={router.pathname === "/containers" ? "active" : ""}>
               <Link href="/containers">Containers</Link>
+            </li>
+            <li className={router.pathname === "/networks" ? "active" : ""}>
+              <Link href="/networks" passHref legacyBehavior>
+                Networks
+              </Link>
             </li>
           </ul>
         </NavContainer>
